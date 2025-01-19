@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../../../styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.catproject.register">
+    <children>
+        <ImageView fx:id="loginBackgroundImg" fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <effect>
+                <GaussianBlur radius="0.0" />
+            </effect>
+            <image>
+                <Image url="@background.jpg" />
+            </image>
+        </ImageView>
+        <VBox fx:id="loginBox" alignment="TOP_CENTER" layoutX="648.0" layoutY="94.0" opacity="0.95" prefHeight="868.0" prefWidth="625.0" AnchorPane.leftAnchor="648.0" AnchorPane.rightAnchor="647.0">
+            <children>
+                <ImageView fitHeight="219.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@scene.jpeg.jpg" />
+                    </image>
+                </ImageView>
+                <Label prefHeight="46.0" prefWidth="170.0" text="Registration">
+                    <font>
+                        <Font size="31.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                    <children>
+                        <Label text="Username:">
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="30.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="txtUsername" prefHeight="55.0" prefWidth="264.0" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="100.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                    <children>
+                        <Label text="Password:">
+                            <font>
+                                <Font size="22.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets right="30.0" />
+                            </HBox.margin>
+                        </Label>
+                        <PasswordField fx:id="txtPassword" prefHeight="55.0" prefWidth="264.0" />
+                    </children>
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+               <children>
+                  <Label text="Confirm:">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Label>
+                  <PasswordField fx:id="txtPassword1" prefHeight="55.0" prefWidth="264.0" />
+               </children>
+            </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginButtonClick" prefHeight="78.0" prefWidth="206.0" text="Register">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                  <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backButtonClick" prefHeight="78.0" prefWidth="206.0" text="Go Back">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                </HBox>
+                <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+            </children></VBox>
+    </children>
+</AnchorPane>

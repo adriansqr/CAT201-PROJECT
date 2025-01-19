@@ -1,0 +1,36 @@
+
+#loginBox{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 40;
+
+}
+
+#inputName{
+    -fx-border-color: #333;
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+}
+
+#mainBox{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 40;
+}
+
+#cartButton{
+    -fx-background-color: #76d7c4;
+}
+
+#wishlistButton{
+    -fx-background-color: #7fb3d5;
+}
+
+#sectionMenu{
+    -fx-background-color: #7fb3d5;
+    -fx-border-radius: 200px;
+}
+
+#Hyperlinks{
+    -fx-text-fill: #17202a; /* Blue color */
+
+}
